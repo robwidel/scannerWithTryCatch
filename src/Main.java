@@ -10,12 +10,11 @@ public class Main {
         int x;
 
         try {
-            if(scanner.hasNextInt()){
-                x = scanner.nextInt();
-                System.out.println("Takie dales int: " + x);
-            }
-        } catch(Exception e) {
-            System.out.println("Something went wrong.");
+            x = scanner.nextInt();
+            System.out.println("Takie dales int: " + x);
+        }
+         catch(Exception e) {
+             e.printStackTrace();
         } finally {
             System.out.println("The 'try catch' is finished.");
         }
